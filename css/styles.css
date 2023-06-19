@@ -90,19 +90,22 @@ a {
 }
 
 header {
-    height: 60vh;
-    overflow: auto;
+    height: auto;
+    overflow: hidden;
+    overflow-y: hidden;
     background-image: url(../img/cielo2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1500px;
-    display: flex;
+    background-size: cover;
+}
+/* display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
+*/
 main {
     background-color: lightcoral;
+    overflow-y: auto;
 
 }
 
@@ -169,13 +172,13 @@ article {
 }
 
 
-header ul {
+/*header ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
 
 }
-
+*/
 header figure {
     display: flex;
     flex-direction: column;
@@ -210,9 +213,9 @@ header figure {
 .contenedor-imagenes img {
     margin: 10px;
 }
-
+/*
 @media (min-width:375px) {
-    .responsive{
+    .responsive {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: ;
@@ -222,4 +225,4 @@ header figure {
 }
 
 
-@media(min-width:1200px) 
+@media(min-width:1200px)
