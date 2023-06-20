@@ -98,11 +98,7 @@ header {
     background-position: center;
     background-size: cover;
 }
-/* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-*/
+
 main {
     background-color: lightcoral;
     overflow-y: auto;
@@ -160,7 +156,7 @@ footer {
 article img,
 div img,
 video {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 article {
@@ -171,14 +167,6 @@ article {
     margin-bottom: 20px;
 }
 
-
-/*header ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-
-}
-*/
 header figure {
     display: flex;
     flex-direction: column;
@@ -213,16 +201,22 @@ header figure {
 .contenedor-imagenes img {
     margin: 10px;
 }
-/*
-@media (min-width:375px) {
-    .responsive {
+
+@media (min-width:375px) and (max-width:420px) {
+    .caja1 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
 
     }
 
 }
 
 
-@media(min-width:1200px)
+@media(min-width:1024px)and(max-width:1200px) {
+    .caja1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+}
