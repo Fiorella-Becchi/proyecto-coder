@@ -18,7 +18,7 @@ nav {
     background-color: transparent;
 }
 
-/*
+/*---estilos usados anteriormente---
 .barra-navegacion {
     background-color: transparent;
     padding: 20px;
@@ -52,6 +52,7 @@ nav {
 body {
     background-color: lightcoral;
 }
+
 /*
 .paises {
     color: black;
@@ -199,7 +200,25 @@ header figure {
     margin: 10px;
 }
 
-@media (min-width:576px) {
+/*SECCION NUESTROS VIAJES*/
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.video.columna {
+    display: flex;
+    justify-content: left;
+    height: 100%;
+}
+
+.parrafo-columna {
+    display: flex;
+    justify-content: right;
+}
+/*MEDIA QUERIES*/
+@media (min-width:375px)and(420px) {
     .caja1 {
         display: grid;
         grid-template-columns: 100%;
