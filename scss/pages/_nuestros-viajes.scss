@@ -1,0 +1,20 @@
+/*SECCION NUESTROS VIAJES*/
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.video.columna {
+    display: flex;
+    justify-content: left;
+    height: 100%;
+}
+
+.parrafo-columna {
+    display: flex;
+    justify-content: right;
+}
+
+
+
