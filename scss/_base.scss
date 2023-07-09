@@ -17,6 +17,10 @@ $color__5: violet;
 a {
     text-decoration: none;
     color: $color__4;
+    &:hover {
+        outline: slateblue;
+        background-color: $color__3;
+    }
 
 }
 
@@ -28,6 +32,22 @@ h1 {
     padding: 20px;
     text-align: left;
     text-shadow: 10px 10px 10px $color__4;
+
+}
+/*-------No me funciona----*/
+.rotate_animacion {
+    animation: rotate 4s infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1, 1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1, 1);
+    }
 }
 
 h2,
@@ -40,11 +60,11 @@ h4 {
 
 h2 {
     text-align: center;
-    transform: rotate(360deg);
-    transition: 5s;
-    transition-delay: 2s;
-    transition-timing-function: ease-out;
+    overflow: hidden;
+
 }
+
+
 
 p {
     color: $color__4;
@@ -52,6 +72,7 @@ p {
     text-align: justify;
     line-height: 1.5;
     font-size: large;
+    
 }
 
 body {
@@ -168,3 +189,13 @@ article {
         grid-template-rows: auto;
     }
 }
+
+
+
+/* NO ME FUNCIONÓ
+
+transform: rotate(360deg);
+    transform: scale(1,1);
+    transition: 2s;
+    transition-timing-function: ease;
+    */

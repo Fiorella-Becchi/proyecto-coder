@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Space+Mono&family=Ysabeau:wght@300&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="description"
         content="Información sobre experiencias personales y herramientas para armar tu propio viaje.">
     <link rel="stylesheet" href="./css/styles.css">
@@ -32,7 +33,9 @@
         <figure>
             <img src="./img/avionpapel.png" alt="Logo Sitio" height="200" width="200">
             <figcaption>
-                <h1> Vida Nómade </h1>
+                <div class=animate__rotateIn>
+                    <h1> Vida Nómade </h1>
+                </div>
             </figcaption>
         </figure>
 
@@ -57,12 +60,6 @@
                             <a href="./pages/nuestros-viajes.html" class="nav-link" href="#">
                                 Nuestros Viajes
                             </a>
-                            <!--<ul class="dropdown-menu">
-                                <li><a href=./america.html class="dropdown-item" href="#">América</a></li>
-                                <li><a href=./asia.html class="dropdown-item" href="#">Asia</a></li>
-                                <li><a href=./europa.html class="dropdown-item" href="#">Europa</a></li>
-
-                            </ul>-->
                         </li>
 
                         <li>
@@ -81,8 +78,9 @@
     </header>
     <div class="container-fluid">
         <main class="responsive">
-
-            <h2 class="caja">No termina uno...que ya se empieza a planear el próximo...</h2>
+            <div class="animate__animated animate__bounce">
+                <h2 class="caja">No termina uno...que ya se empieza a planear el próximo...</h2>
+            </div>
             <section class="flex-container">
                 <article class="caja1">
                     <h3>Último Viaje</h3>
@@ -96,12 +94,15 @@
                         islas.Ya podes ver nuestro último destino en la sección
                         <a href="./pages/nuestros-viajes.html"><strong>Nuestros Viajes.</strong></a>
                     </p>
-                    <img src="./img/grecia.jpg" alt="Una de las islas más conocidas de Grecia, Santorini.">
+                    <div class="centrar-imagen">
+                        <img src="./img/grecia.jpg" alt="Una de las islas más conocidas de Grecia, Santorini.">
+                    </div>
                 </article>
 
                 <article class="caja1">
 
                     <h3>Próximamente... Nuevo Destino!</h3>
+
                     <p> Podés
                         acompañarnos en la organización de nuestro próximo destino! Tiene playas, templos, surf,
                         muchas
@@ -111,11 +112,11 @@
                         apartado
                         <a href="./pages/nuestros-viajes.html"><strong>Nuestros Viajes.</strong></a>
                     </p>
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
-                        <img src="./img/indonesia.jpg" alt="Templo Pura Lempuyang Luhur en Bali.">
-                    </div>
+<div class="centrar-imagen">
+                    <img src="./img/indonesia.jpg" alt="Templo Pura Lempuyang Luhur en Bali.">
 
+                </div>
                 </article>
             </section>
 

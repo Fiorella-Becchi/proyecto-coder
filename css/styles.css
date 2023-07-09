@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,10 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  outline: slateblue;
+  background-color: blueviolet;
+}
 
 h1 {
   color: blueviolet;
@@ -22,6 +27,20 @@ h1 {
   text-shadow: 10px 10px 10px black;
 }
 
+/*-------No me funciona----*/
+.rotate_animacion {
+  animation: rotate 4s infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1, 1);
+  }
+}
 h2,
 h3,
 h4 {
@@ -32,10 +51,7 @@ h4 {
 
 h2 {
   text-align: center;
-  transform: rotate(360deg);
-  transition: 5s;
-  transition-delay: 2s;
-  transition-timing-function: ease-out;
+  overflow: hidden;
 }
 
 p {
@@ -147,6 +163,13 @@ article {
     grid-template-rows: auto;
   }
 }
+/* NO ME FUNCIONÓ
+
+transform: rotate(360deg);
+    transform: scale(1,1);
+    transition: 2s;
+    transition-timing-function: ease;
+    */
 footer {
   color: black;
   font-family: "Ysabeau", sans-serif;
