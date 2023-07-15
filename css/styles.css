@@ -27,7 +27,6 @@ h1 {
   text-shadow: 10px 10px 10px black;
 }
 
-/*-------No me funciona----*/
 .rotate_animacion {
   animation: rotate 4s infinite;
   transform-origin: center;
@@ -38,7 +37,7 @@ h1 {
     transform: rotate(0deg) scale(1, 1);
   }
   100% {
-    transform: rotate(360deg) scale(1, 1);
+    transform: rotate(180deg) scale(1, 1);
   }
 }
 h2,
@@ -68,7 +67,6 @@ body {
 
 main {
   background-color: lightcoral;
-  overflow-y: auto;
 }
 
 .caja {
@@ -87,13 +85,14 @@ main {
 .caja1 {
   background-color: papayawhip;
   color: black;
-  width: auto;
+  max-width: 100%;
   height: auto;
   border-style: solid;
   border-width: 30px;
   border-color: lightcoral;
   padding: 60px;
-  margin: 70px auto 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
   background: linear-gradient(to right, papayawhip, violet);
 }
 
@@ -117,16 +116,6 @@ article {
   flex-flow: column nowrap;
   align-items: flex-start;
   margin-bottom: 20px;
-}
-
-.contenedor-grid {
-  max-width: 100%;
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  gap: 1em;
 }
 
 .centrar-imagen {
@@ -184,6 +173,16 @@ footer {
   width: 100%;
   margin: 20px;
   padding: 30px;
+}
+
+.contenedor-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: 1em;
 }
 
 header {

@@ -17,6 +17,7 @@ $color__5: violet;
 a {
     text-decoration: none;
     color: $color__4;
+
     &:hover {
         outline: slateblue;
         background-color: $color__3;
@@ -34,7 +35,7 @@ h1 {
     text-shadow: 10px 10px 10px $color__4;
 
 }
-/*-------No me funciona----*/
+
 .rotate_animacion {
     animation: rotate 4s infinite;
     transform-origin: center;
@@ -46,7 +47,7 @@ h1 {
     }
 
     100% {
-        transform: rotate(360deg) scale(1, 1);
+        transform: rotate(180deg) scale(1, 1);
     }
 }
 
@@ -72,8 +73,9 @@ p {
     text-align: justify;
     line-height: 1.5;
     font-size: large;
-    
+
 }
+
 
 body {
     background-color: $color__1;
@@ -81,8 +83,6 @@ body {
 
 main {
     background-color: $color__1;
-    overflow-y: auto;
-
 }
 
 .caja {
@@ -102,13 +102,14 @@ main {
 .caja1 {
     background-color: $color__2;
     color: $color__4;
-    width: auto;
+    max-width: 100%;
     height: auto;
     border-style: solid;
     border-width: 30px;
     border-color: $color__1;
     padding: 60px;
-    margin: 70px auto 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
     background: linear-gradient(to right, $color__2, $color__5);
 }
 
@@ -135,17 +136,6 @@ article {
 }
 
 
-.contenedor-grid {
-    max-width: 100%;
-    display: grid;
-    grid-template-areas: "header"
-        "main"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    gap: 1em;
-}
 
 .centrar-imagen {
     display: block;
