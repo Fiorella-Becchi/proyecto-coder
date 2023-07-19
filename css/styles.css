@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-/*transition-duration: 2s;
-    transition-property: all;
-    transition-delay: 2s;*/
 a {
   text-decoration: none;
   color: black;
@@ -27,8 +24,9 @@ h1 {
 }
 
 .rotate_animacion {
-  animation: rotate 4s infinite;
+  animation: rotate 5s ease-in-out;
   transform-origin: center;
+  animation-fill-mode: forwards;
 }
 
 @keyframes rotate {
@@ -36,7 +34,7 @@ h1 {
     transform: rotate(0deg) scale(1, 1);
   }
   100% {
-    transform: rotate(180deg) scale(1, 1);
+    transform: rotate(360deg) scale(1, 1);
   }
 }
 h2,
