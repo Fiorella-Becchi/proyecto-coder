@@ -61,7 +61,7 @@ h4 {
 
 h2 {
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
 
 }
 
@@ -127,6 +127,10 @@ iframe {
     max-width: 100%;
 }
 
+.sclae-down {
+    object-fit: scale-down;
+}
+
 article {
     width: 75%;
     display: flex;
@@ -161,7 +165,6 @@ article {
 
 
 
-
 /*MEDIA QUERIES*/
 @media (min-width:375px)and (max-width:420px) {
     .caja1 {
@@ -179,13 +182,3 @@ article {
         grid-template-rows: auto;
     }
 }
-
-
-
-/* NO ME FUNCIONÓ
-
-transform: rotate(360deg);
-    transform: scale(1,1);
-    transition: 2s;
-    transition-timing-function: ease;
-    */
